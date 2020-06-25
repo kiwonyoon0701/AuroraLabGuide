@@ -26,15 +26,7 @@
 
 **COMMAND & Output Example**
 
-`ubuntu@ip-172-31-0-108:~$ mysql -hauroralab-mysql-cluster.cluster-c5ztovm2w5as.us-west-2.rds.amazonaws.com -u$DBUSER -p"$DBPASS" -e"SELECT @@aurora_version;"`
-
-`
-+------------------+
-| @@aurora_version |
-+------------------+
-| 2.07.1           |
-+------------------+
-`
+<kbd> ![GitHub Logo](images/1-connection-check.png) </kbd>
 
 **앞으로 있을 Terminal 작업은 모두 위의 Session Manager 접속을 통해서 이뤄집니다.**
 **Session Manager가 Timeout되서 Close될 경우 위의 순서로 다시 여시면 됩니다.**
