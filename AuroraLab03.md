@@ -75,3 +75,5 @@ LINES TERMINATED BY '\r\n';
 10. 신규 Read Replica가 Available이 되면 부하가 분산되어 CPU Usage가 낮아짐을 확인합니다.
 
 <kbd> ![GitHub Logo](images/3-read-load-balanced.png) </kbd>
+
+11. Session Manager terminal에서 부하를 주고 있는 Session을 `Ctrl+c`를 이용하여 중지합니다.
