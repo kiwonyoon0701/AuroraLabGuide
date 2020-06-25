@@ -70,3 +70,37 @@ aws rds describe-db-clusters \
 6. Aurora DB에 접속하여 Table들을 확인합니다. 우리는 `sbtest1` table이 Drop된 직후로 backtrack했기 때문에 `sbtest1`은 존재하지 않아야 합니다.
 
 <kbd> ![GitHub Logo](images/5-show-tables.png) </kbd>
+
+**Drop table 직후 상태로 backtrack했기 때문에 table이 존재하지 않습니다.**
+
+7. BackTrack을 이용하여 실수로 삭제했던 `sbtest1' table을 복원합니다. 이번에는 Drop Table 이전 시점으로 backtrack하겠습니다. (drop command 수행 전 확인했던 Timestamp를 이용합니다.) available 상태까지 기다립니다.
+
+```
+aws rds backtrack-db-cluster \
+--db-cluster-identifier auroralab-mysql-cluster \
+--backtrack-to "yyyy-mm-ddThh:mm:ssZ"
+```
+
+```
+aws rds describe-db-clusters \
+--db-cluster-identifier auroralab-mysql-cluster \
+| jq -r '.DBClusters[0].Status'
+```
+
+<kbd> ![GitHub Logo](images/5-backtrack4.png) </kbd>
+
+<kbd> ![GitHub Logo](images/5-backtrack5.png) </kbd>
+
+8. Aurora DB에 접속하여 Table들을 확인합니다. `sbtest1` table drop 이전 시점으로 backtrack했기 때문에 `sbtest1` table이 존재하여 하며, 기존의 Checksum과 동일한 값을 Return 해야 합니다.
+
+```
+mysql -h[clusterEndpoint] -u$DBUSER -p"$DBPASS" mylab
+
+show tables;
+
+checksum table sbtest1;
+
+quit;
+```
+
+<kbd> ![GitHub Logo](images/5-backtrack4.png) </kbd>
