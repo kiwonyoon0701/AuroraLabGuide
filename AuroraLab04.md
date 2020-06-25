@@ -89,4 +89,16 @@ checksum table sbtest1;
 
 `checksum table sbtest1;`
 
-`
+16. Clone DB의 sbtest1 Table의 Checksum이 달라짐을 확인합니다.
+
+<kbd> ![GitHub Logo](images/4-checksum-clone-changed.png) </kbd>
+
+17. `quit`을 이용하여 Cloned Instane의 접속을 종료합니다.
+
+18. Clone DB의 변경이 원본 DB에 영향을 주지 않음을 확인합니다. 원본 DB에 접속하여 sbtest1의 checksum을 확인합니다.
+
+`mysql -h[clusterEndpoint] -u$DBUSER -p"$DBPASS" mylab`
+
+`checksum table sbtest1;`
+
+`quit`
