@@ -25,6 +25,12 @@
 
 <kbd> ![GitHub Logo](images/2-stack-status.png) </kbd>
 
+8. Stack 생성이 완료되면 Outputs Tab을 Click하고, KEY와 Value를 별도의 메모장에 복사해둡니다. (이후 Step에서 사용됨)
+
+<kbd> ![GitHub Logo](images/2-stack-outputs.png) </kbd>
+
+2-stack-outputs.png
+
 2-stack-status
 
 **Bucket Name** : `oracle-to-s3-dms-kiwony`
