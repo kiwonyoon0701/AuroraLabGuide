@@ -4,3 +4,7 @@
 
 `https://us-west-2.console.aws.amazon.com/systems-manager/session-manager?region=us-west-2`
 
+2. "Start Session"을 Click
+
+<kbd> ![GitHub Logo](images/1-start-session.png) </kbd>
+
