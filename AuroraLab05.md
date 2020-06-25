@@ -104,3 +104,5 @@ quit;
 ```
 
 <kbd> ![GitHub Logo](images/5-backtrack6.png) </kbd>
+
+**sbtest1 Table이 다시 복원되었고, 기존 Checksum임을 확인합니다.**
