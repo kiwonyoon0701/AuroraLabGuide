@@ -10,7 +10,7 @@
 
 3. `auroralab-mysql-workstation`을 선택한 후 "Start Session"을 Click
 
-<kbd> ![GitHub Logo](images/1-connect-session.png.png) </kbd>
+<kbd> ![GitHub Logo](images/1-connect-session.png) </kbd>
 
 4. Terminal 이 뜨면 `sudo su -l ubuntu`를 통해 ssm-user에서 ubuntu User로 Switching o
 
