@@ -103,4 +103,4 @@ checksum table sbtest1;
 quit;
 ```
 
-<kbd> ![GitHub Logo](images/5-backtrack4.png) </kbd>
+<kbd> ![GitHub Logo](images/5-backtrack6.png) </kbd>
