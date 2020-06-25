@@ -20,5 +20,23 @@
 
 `* bootstrap complete, rebooting`
 
+6. mysql client를 사용해서 aurora instance로 접속을 확인합니다.
+
+`mysql -h[clusterEndpoint] -u$DBUSER -p"$DBPASS" -e"SELECT @@aurora_version;"`
+
+**COMMAND & Output Example**
+
+`ubuntu@ip-172-31-0-108:~$ mysql -hauroralab-mysql-cluster.cluster-c5ztovm2w5as.us-west-2.rds.amazonaws.com -u$DBUSER -p"$DBPASS" -e"SELECT @@aurora_version;"`
+
+`
++------------------+
+| @@aurora_version |
++------------------+
+| 2.07.1           |
++------------------+
+`
+
 **앞으로 있을 Terminal 작업은 모두 위의 Session Manager 접속을 통해서 이뤄집니다.**
 **Session Manager가 Timeout되서 Close될 경우 위의 순서로 다시 여시면 됩니다.**
+
+1. 수고하셨습니다. 다음 챕터로 이동하세요. [AuroraLab03.md](AuroraLab03.md)
