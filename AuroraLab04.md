@@ -41,5 +41,12 @@ aws rds create-db-instance \
 
 6. 신규 Instance 생성 상태를 확인하고 available 상태가 되는지 확인합니다.
 
-<kbd> ![GitHub Logo](images/3-create-procedure.png) </kbd>
-dbSecurityGroupdbSubnetGroup
+```
+aws rds describe-db-instances \
+--db-instance-identifier auroralab-mysql-clone-instance \
+| jq -r '.DBInstances[0].DBInstanceStatus'
+```
+
+7. 기존 DB Instance와 Cloning된 Instance가 같은지 확인합니다. 다음의 명령어로 Clone된 신규 Instance에 접속합니다. [cluster endpoint of clone]은 3번 Step의 `describe-db-clusters`를 이용하여 확인 가능합니다.
+
+`mysql -h[cluster endpoint of clone] -u$DBUSER -p"$DBPASS" mylab`
