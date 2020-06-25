@@ -1,6 +1,7 @@
 # LAB 환경 구성
 
-1. AWS Console Login
+1. AWS Console Login - 자신의 AWS IAM 계정으로 Login 합니다. 
+`https://console.aws.amazon.com/`
 
 <kbd> ![GitHub Logo](images/2-login.png) </kbd>
 
