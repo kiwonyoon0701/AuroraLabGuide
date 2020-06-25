@@ -35,4 +35,14 @@ sysbench oltp_write_only \
 
 <kbd> ![GitHub Logo](images/5-sysbench.png) </kbd>
 
-3.
+3. DB에 다시 접속하여 `sbtest1` table의 checksum을 확인합니다. 기존 Table의 Drop되고 새로운 Table에 Sysbench를 이용하여 신규 Data를 넣었기 때문에 기존 Checksum과 값이 달라짐을 확인합니다.
+
+```
+mysql -h[clusterEndpoint] -u$DBUSER -p"$DBPASS" mylab
+
+checksum table sbtest1;
+
+quit;
+```
+
+4. BackTrack을 이용하여 실수로 삭제했던 `sbtest1` table을 복원합니다. 우선 drop 직후의 시점으로 Database를 BackTrack합니다. (drop command 수행 후 확인했던 Timestamp를 이용합니다.)
