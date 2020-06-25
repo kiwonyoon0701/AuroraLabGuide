@@ -25,5 +25,8 @@ aws rds describe-db-clusters \
 | jq -r '.DBClusters[0].Status, .DBClusters[0].Endpoint'
 ```
 
+4. 아래 화면처럼 Available이라고 나오면 Cloning이 완료 된 것입니다. 2번째 줄에서 Cloning으로 새롭게 생성된 Instance의 Endpoint를 확인 할 수 있습니다.
+   <kbd> ![GitHub Logo](images/4-describe-cluster.png) </kbd>
+
 <kbd> ![GitHub Logo](images/3-create-procedure.png) </kbd>
 dbSecurityGroupdbSubnetGroup
