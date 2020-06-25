@@ -6,7 +6,7 @@
 
 `mysql -h[clusterEndpoint] -u$DBUSER -p"$DBPASS" mylab`
 
-3. 
+3. mysql session에서 다음의 명령어로 Procedure를 생성합니다. 이 Procedure를 사용하여 이후 Step에서 Database에서 부하를 줍니다. 
 
 ```
 DELIMITER $$
