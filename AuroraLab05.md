@@ -81,13 +81,13 @@ aws rds backtrack-db-cluster \
 --backtrack-to "yyyy-mm-ddThh:mm:ssZ"
 ```
 
+<kbd> ![GitHub Logo](images/5-backtrack4.png) </kbd>
+
 ```
 aws rds describe-db-clusters \
 --db-cluster-identifier auroralab-mysql-cluster \
 | jq -r '.DBClusters[0].Status'
 ```
-
-<kbd> ![GitHub Logo](images/5-backtrack4.png) </kbd>
 
 <kbd> ![GitHub Logo](images/5-backtrack5.png) </kbd>
 
