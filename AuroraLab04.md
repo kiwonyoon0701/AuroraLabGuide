@@ -101,4 +101,12 @@ checksum table sbtest1;
 
 `checksum table sbtest1;`
 
-`quit`
+**원본 DB의 checksum은 동일함을 확인합니다. 즉 Clone DB의 변경은 원본에 영향을 주지 않음을 확인합니다.**
+
+19. LAB에서 사용한 Clone DB를 삭제합니다.
+
+`aws rds delete-db-instance --db-instance-identifier auroralab-mysql-clone-instance`
+
+`aws rds delete-db-cluster --db-cluster-identifier auroralab-mysql-clone --skip-final-snapshot`
+
+20. 수고하셨습니다. 다음 챕터로 이동하세요. [AuroraLab05.md](AuroraLab05.md)
