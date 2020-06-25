@@ -76,3 +76,17 @@ checksum table sbtest1;
 ```
 
 **원본 DB와 Cloning한 DB가 동일하기 때문에 Checksum 결과가 동일해야 합니다.**
+
+13. `quit`을 이용하여 원본 Instance 접속을 종료합니다.
+
+14. Clone DB에서 Data를 변경 합니다. 아래 명령어로 Clone DB에 접속합니다.
+
+`mysql -h[cluster endpoint of clone] -u$DBUSER -p"$DBPASS" mylab`
+
+15. 다음 명령어로 데이터를 삭제합니다. 그리고 Checksum을 확인합니다.
+
+`delete from sbtest1 where id = 1;`
+
+`checksum table sbtest1;`
+
+`
