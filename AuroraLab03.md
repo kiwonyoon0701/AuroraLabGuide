@@ -26,7 +26,7 @@ DELIMITER ;
 
 <kbd> ![GitHub Logo](images/3-create-procedure.png) </kbd>
 
-4. S3로부터 Initial Data를 Loading 합니다. mysql session에서 다음의 명령어를 수행합니다.
+4. Initial Table을 생성합니다. mysql session에서 다음의 명령어를 수행합니다.
 
 ```
 DROP TABLE IF EXISTS `sbtest1`;
@@ -40,7 +40,23 @@ KEY `k_1` (`k`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 ```
 
+<kbd> ![GitHub Logo](images/3-create-table.png) </kbd>
 
-5. "Start Session"을 Click
+5. S3에 Data를 다음의 명령어로 Loading 합니다. mysql session에서 다음의 명령어를 수행합니다.
+```
+LOAD DATA FROM S3 MANIFEST
+'s3-us-east-1://awsauroralabsmy-us-east-1/samples/sbdata/sample.manifest'
+REPLACE
+INTO TABLE sbtest1
+CHARACTER SET 'latin1'
+FIELDS TERMINATED BY ','
+LINES TERMINATED BY '\r\n';
+```
+
+6. 정상적으로 Loading이 끝났다는 message가 나오면 아래의 명령어로 mysql session에서 나옵니다.
+
+`quit;`
+
+7. "Start Session"을 Click
 
 <kbd> ![GitHub Logo](images/1-start-session.png) </kbd>
