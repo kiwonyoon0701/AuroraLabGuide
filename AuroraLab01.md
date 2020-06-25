@@ -29,7 +29,14 @@
 
 <kbd> ![GitHub Logo](images/2-stack-outputs.png) </kbd>
 
+9. BastionInstance 항목에 `i-0123456789abcdef0` 형태의 Instance ID가 존재하는지 확인하세요.
+
 수고하셨습니다. 다음 챕터로 이동하세요. [AuroraLab02.md](AuroraLab02.md)
+
+kkk
+
+
+
 
 2-stack-outputs.png
 
