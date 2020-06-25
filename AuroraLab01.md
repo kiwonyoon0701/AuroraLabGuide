@@ -29,6 +29,8 @@
 
 <kbd> ![GitHub Logo](images/2-stack-outputs.png) </kbd>
 
+수고하셨습니다. 다음 챕터로 이동하세요. [AuroraLab02.md](AuroraLab02.md)
+
 2-stack-outputs.png
 
 2-stack-status
