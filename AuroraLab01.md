@@ -1,7 +1,7 @@
 # LAB 환경 구성
 
-1. AWS Console Login - 자신의 AWS IAM 계정으로 Login 합니다. 
-`https://console.aws.amazon.com/`
+1. AWS Console Login - 자신의 AWS IAM 계정으로 Login 합니다.
+   `https://console.aws.amazon.com/`
 
 <kbd> ![GitHub Logo](images/2-login.png) </kbd>
 
@@ -32,15 +32,3 @@
 9. BastionInstance 항목에 `i-0123456789abcdef0` 형태의 Instance ID가 존재하는지 확인하세요.
 
 10. 수고하셨습니다. 다음 챕터로 이동하세요. [AuroraLab02.md](AuroraLab02.md)
-
-
-
-
-
-2-stack-outputs.png
-
-2-stack-status
-
-**Bucket Name** : `oracle-to-s3-dms-kiwony`
-
-<kbd> ![GitHub Logo](images2. Regionㅇ에엣에서서 OREGONUSUS WEST/1.png) </kbd>
