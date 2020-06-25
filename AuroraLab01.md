@@ -11,7 +11,7 @@
 
 3. CloudFormation Template을 Launch 합니다.
 
-<a href="https://console.aws.amazon.com/cloudformation/home?region=us-west-2#/stacks/create/review?stackName=auroralab&templateURL=https://s3.amazonaws.com/ams-stack-prod-content-us-east-1/templates/lab_template.yml&param_deployCluster=Yes">Launch</a>
+<a href="https://console.aws.amazon.com/cloudformation/home?region=us-west-2#/stacks/create/review?stackName=auroralab&templateURL=https://s3.amazonaws.com/ams-stack-prod-content-us-east-1/templates/lab_template.yml&param_deployCluster=Yes" target="blank">TEMPLATE Launch</a>
 
 **Bucket Name** : `oracle-to-s3-dms-kiwony`
 
