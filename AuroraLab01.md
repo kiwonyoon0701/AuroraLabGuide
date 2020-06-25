@@ -15,6 +15,8 @@
 
 4. "I acknowledge that AWS CloudFormation might create IAM resources with custom names"를 Check 하고 "Create Stack" Click
 
+<kbd> ![GitHub Logo](images/2-create-stack-confirm.png) </kbd>
+
 **Bucket Name** : `oracle-to-s3-dms-kiwony`
 
 <kbd> ![GitHub Logo](images2. Regionㅇ에엣에서서 OREGONUSUS WEST/1.png) </kbd>
