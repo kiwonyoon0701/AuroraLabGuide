@@ -12,7 +12,7 @@
 
 <kbd> ![GitHub Logo](images/1-connect-session.png) </kbd>
 
-4. Terminal 이 뜨면 `sudo su -l ubuntu`를 통해 ssm-user에서 ubuntu User로 Switching o
+4. Terminal 이 뜨면 `sudo su -l ubuntu`를 통해 ssm-user에서 ubuntu User로 Switching.(항상 ubuntu User로 작업을 해야 합니다.)
 
 <kbd> ![GitHub Logo](images/1-terminal-sudo.png) </kbd>
 
@@ -20,3 +20,5 @@
 
 `* bootstrap complete, rebooting`
 
+**앞으로 있을 Terminal 작업은 모두 위의 Session Manager 접속을 통해서 이뤄집니다.**
+**Session Manager가 Timeout되서 Close될 경우 위의 순서로 다시 여시면 됩니다.**
