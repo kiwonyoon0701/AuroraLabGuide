@@ -60,3 +60,19 @@ aws rds describe-db-instances \
 <kbd> ![GitHub Logo](images/2-checksum-clone.png) </kbd>
 
 2-checksum-clone.png
+
+10. `quit`을 이용하여 Cloned Instane의 접속을 종료합니다.
+
+11. 다음의 명령어를 이용하여 원본 Instacne에 접속 합니다. [clusterEndpoint]는 Lab01에서 확인한 Output을 사용합니다.
+
+```
+mysql -h[clusterEndpoint] -u$DBUSER -p"$DBPASS" mylab
+```
+
+12. 다음의 명령어로 sbtest1 table의 Checksum을 확인합니다.
+
+```
+checksum table sbtest1;
+```
+
+**원본 DB와 Cloning한 DB가 동일하기 때문에 Checksum 결과가 동일해야 합니다.**
