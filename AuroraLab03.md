@@ -77,3 +77,7 @@ LINES TERMINATED BY '\r\n';
 <kbd> ![GitHub Logo](images/3-read-load-balanced.png) </kbd>
 
 11. Session Manager terminal에서 부하를 주고 있는 Session을 `Ctrl+c`를 이용하여 중지합니다.
+
+12. 몇 분이 지나고 나면 추가되었던 Reader Node가 Auto Scaling Policy에 의해 자동으로 삭제 됩니다.
+
+13. 수고하셨습니다. 다음 챕터로 이동하세요. [AuroraLab04.md](AuroraLab04.md)
