@@ -9,9 +9,10 @@
 
 <kbd> ![GitHub Logo](images/2-region-select.png) </kbd>
 
-3. CloudFormation Template을 Launch 합니다.
+3. 다음의 주소를 복사해서 Browser의 새 창에 Copy and Paste합니다.
 
-<a href="https://console.aws.amazon.com/cloudformation/home?region=us-west-2#/stacks/create/review?stackName=auroralab&templateURL=https://s3.amazonaws.com/ams-stack-prod-content-us-east-1/templates/lab_template.yml&param_deployCluster=Yes" target="_blank">TEMPLATE Launch</a>
+**CF URL** : `https://console.aws.amazon.com/cloudformation/home?region=us-west-2#/stacks/create/review?stackName=auroralab&templateURL=https://s3.amazonaws.com/ams-stack-prod-content-us-east-1/templates/lab_template.yml&param_deployCluster=Yes`
+
 
 **Bucket Name** : `oracle-to-s3-dms-kiwony`
 
