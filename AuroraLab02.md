@@ -26,7 +26,7 @@
 
 **COMMAND & Output Example**
 
-<kbd> ![GitHub Logo](images/1-connection-check.png) </kbd>
+<kbd> ![GitHub Logo](images/1-connection-check2.png) </kbd>
 
 **앞으로 있을 Terminal 작업은 모두 위의 Session Manager 접속을 통해서 이뤄집니다.**
 **Session Manager가 Timeout되서 Close될 경우 위의 순서로 다시 여시면 됩니다.**
