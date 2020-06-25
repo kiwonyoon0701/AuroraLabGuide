@@ -18,3 +18,21 @@ quit;
 ```
 
 <kbd> ![GitHub Logo](images/5-drop-table.png) </kbd>
+
+2. 다음의 sysbench command를 이용하여 새로운 `sbtest1` table을 생성하고 data를 넣습니다. [clusterEndpoint]를 변경한 후 실행합니다.
+
+```
+sysbench oltp_write_only \
+--threads=1 \
+--mysql-host=[clusterEndpoint] \
+--mysql-user=$DBUSER \
+--mysql-password="$DBPASS" \
+--mysql-port=3306 \
+--tables=1 \
+--mysql-db=mylab \
+--table-size=1000000 prepare
+```
+
+<kbd> ![GitHub Logo](images/5-sysbench.png) </kbd>
+
+3.
