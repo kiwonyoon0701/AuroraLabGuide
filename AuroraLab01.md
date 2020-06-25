@@ -17,6 +17,16 @@
 
 <kbd> ![GitHub Logo](images/2-create-stack-confirm.png) </kbd>
 
+5. Stack 생성에 약 15-20분 정도 소요 됩니다.
+
+6. "Event" Page에서 진행 상황을 확인 합니다.
+
+7. 아래 화면처럼 Stack Resource가 "CREATE_COMPLETE"가 되면 환경 구성이 완료된 것입니다.
+
+<kbd> ![GitHub Logo](images/2-stack-status.png) </kbd>
+
+2-stack-status
+
 **Bucket Name** : `oracle-to-s3-dms-kiwony`
 
 <kbd> ![GitHub Logo](images2. Regionㅇ에엣에서서 OREGONUSUS WEST/1.png) </kbd>
