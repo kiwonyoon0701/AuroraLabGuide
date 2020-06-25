@@ -46,3 +46,25 @@ quit;
 ```
 
 4. BackTrack을 이용하여 실수로 삭제했던 `sbtest1` table을 복원합니다. 우선 drop 직후의 시점으로 Database를 BackTrack합니다. (drop command 수행 후 확인했던 Timestamp를 이용합니다.)
+
+```
+aws rds backtrack-db-cluster \
+--db-cluster-identifier auroralab-mysql-cluster \
+--backtrack-to "2020-06-25T03:51:01Z"
+```
+
+<kbd> ![GitHub Logo](images/5-backtrack1.png) </kbd>
+
+5. Backtrack 상태를 아래의 command로 조회합니다. (BackTrack을 위해 몇 분 정도 소요됩니다.)
+
+```
+aws rds describe-db-clusters \
+--db-cluster-identifier auroralab-mysql-cluster \
+| jq -r '.DBClusters[0].Status'
+```
+
+<kbd> ![GitHub Logo](images/5-backtrack2.png) </kbd>
+
+<kbd> ![GitHub Logo](images/5-backtrack3.png) </kbd>
+
+6.
