@@ -26,7 +26,20 @@ aws rds describe-db-clusters \
 ```
 
 4. 아래 화면처럼 Available이라고 나오면 Cloning이 완료 된 것입니다. 2번째 줄에서 Cloning으로 새롭게 생성된 Instance의 Endpoint를 확인 할 수 있습니다.
-   <kbd> ![GitHub Logo](images/4-describe-cluster.png) </kbd>
+
+<kbd> ![GitHub Logo](images/4-describe-cluster.png) </kbd>
+
+5. 생성된 Cluster에 DB Instance를 추가합니다.
+
+```
+aws rds create-db-instance \
+--db-instance-class db.r5.large \
+--engine aurora-mysql \
+--db-cluster-identifier auroralab-mysql-clone \
+--db-instance-identifier auroralab-mysql-clone-instance
+```
+
+6. 신규 Instance 생성 상태를 확인하고 available 상태가 되는지 확인합니다.
 
 <kbd> ![GitHub Logo](images/3-create-procedure.png) </kbd>
 dbSecurityGroupdbSubnetGroup
