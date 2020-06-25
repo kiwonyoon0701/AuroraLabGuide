@@ -24,6 +24,23 @@ END$$
 DELIMITER ;
 ```
 
-1. "Start Session"을 Click
+<kbd> ![GitHub Logo](images/3-create-procedure.png) </kbd>
+
+4. S3로부터 Initial Data를 Loading 합니다. mysql session에서 다음의 명령어를 수행합니다.
+
+```
+DROP TABLE IF EXISTS `sbtest1`;
+CREATE TABLE `sbtest1` (
+ `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+ `k` int(10) unsigned NOT NULL DEFAULT '0',
+ `c` char(120) NOT NULL DEFAULT '',
+ `pad` char(60) NOT NULL DEFAULT '',
+PRIMARY KEY (`id`),
+KEY `k_1` (`k`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+```
+
+
+5. "Start Session"을 Click
 
 <kbd> ![GitHub Logo](images/1-start-session.png) </kbd>
