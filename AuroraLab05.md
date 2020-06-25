@@ -55,7 +55,7 @@ aws rds backtrack-db-cluster \
 
 <kbd> ![GitHub Logo](images/5-backtrack1.png) </kbd>
 
-5. Backtrack 상태를 아래의 command로 조회합니다. (BackTrack을 위해 몇 분 정도 소요됩니다.)
+5. Backtrack 상태를 아래의 command로 조회합니다. available 상태가 될때까지 기다립니다. (BackTrack을 위해 몇 분 정도 소요됩니다.)
 
 ```
 aws rds describe-db-clusters \
@@ -67,4 +67,6 @@ aws rds describe-db-clusters \
 
 <kbd> ![GitHub Logo](images/5-backtrack3.png) </kbd>
 
-6.
+6. Aurora DB에 접속하여 Table들을 확인합니다. 우리는 `sbtest1` table이 Drop된 직후로 backtrack했기 때문에 `sbtest1`은 존재하지 않아야 합니다.
+
+<kbd> ![GitHub Logo](images/5-show-tables.png) </kbd>
